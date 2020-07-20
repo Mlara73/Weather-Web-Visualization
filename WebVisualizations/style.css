@@ -10,6 +10,13 @@ h3{
     font-family: 'Times New Roman';
     padding: 15px;
 }
+
+h5{
+    color: rgb(89, 189, 172);
+    font-family: 'Times New Roman';
+    padding: 15px;
+}
+
 .home-image{
     padding: 10px;
     border: none;
@@ -36,6 +43,18 @@ p{
    text-align: center;
   }
 
+.separator{
+    visibility: hidden;
+}
+
+.visualizations-first-row{
+    display: none;
+}
+
+.visualization-second-row{
+    display: none;
+}
+
 @media(max-width:767px){
     .bar-green{
         background-color: rgb(89, 189, 172)!important;    
@@ -43,5 +62,21 @@ p{
 
     .sm-body-background{
         background-color : white;
+    }
+
+    .separator{
+        visibility: visible;
+    }
+
+    .original-visualizations{
+        display: none;
+    }
+
+    .visualizations-first-row{
+        display: inline-flex;
+    }
+
+    .visualization-second-row{
+        display: grid;
     }
 }
