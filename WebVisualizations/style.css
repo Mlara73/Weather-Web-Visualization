@@ -1,0 +1,47 @@
+/* navbar styling*/
+.brand-style{
+    background-color: rgb(89, 189, 172);
+    font-family: 'Times New Roman'; 
+    font-size: 25px;
+}
+
+h3{
+    color: rgb(89, 189, 172);
+    font-family: 'Times New Roman';
+    padding: 15px;
+}
+.home-image{
+    padding: 10px;
+    border: none;
+}
+
+.grey-background{
+    background-color: rgb(228, 225, 225);
+}
+.white-background{
+    background-color: white;
+}
+
+.images-border{
+    border:1px solid rgb(89, 189, 172)
+}
+
+
+p{
+    font-family: Arial,;
+    font-size: large;
+ }
+
+.center {
+   text-align: center;
+  }
+
+@media(max-width:767px){
+    .bar-green{
+        background-color: rgb(89, 189, 172)!important;    
+    }
+
+    .sm-body-background{
+        background-color : white;
+    }
+}
