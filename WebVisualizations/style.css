@@ -59,6 +59,10 @@ p{
     background-color:rgb(228, 225, 225);
 }
 
+.italics{
+    font-style: italic;
+}
+
 @media(max-width:767px){
     .bar-green{
         background-color: rgb(89, 189, 172)!important;    
