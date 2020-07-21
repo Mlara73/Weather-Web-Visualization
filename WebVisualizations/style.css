@@ -1,4 +1,4 @@
-/* navbar styling*/
+/* Style*/
 .brand-style{
     background-color: rgb(89, 189, 172);
     font-family: 'Times New Roman'; 
@@ -59,13 +59,19 @@ p{
     background-color:rgb(228, 225, 225);
 }
 
-.italics{
-    font-style: italic;
-}
+/* Adjustment for small screen */
 
 @media(max-width:767px){
     .bar-green{
         background-color: rgb(89, 189, 172)!important;    
+    }
+
+    .background-collapse{
+        background-color: #f8f9fa;
+    }
+
+    .padding-navigator{
+        padding:inherit;
     }
 
     .sm-body-background{
@@ -98,5 +104,9 @@ p{
     
     tr{
         border-bottom: 1px solid #ddd;
+    }
+
+    .dropdown-list-grey-background{
+        background-color: rgb(228, 225, 225) ;
     }
 }

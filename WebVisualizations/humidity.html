@@ -5,37 +5,36 @@
         <title>Humidity</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-      </head>
+        <link rel="shortcut icon" type="image/x-icon" href="Resources/assets/images/Fig1.png"/>
+    </head>
 <body class = "grey-background sm-body-background">
-    <nav class="navbar navbar-expand-md navbar-light bg-light bar-green">
-        <div class="container">
-            <a class="navbar-brand text-white brand-style px-3"; href="index.html"><strong>Latitude</strong></a>
-            <button class="navbar-toggler border border-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Plots
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" target = "_blank" href="temperature.html">Max Temperature</a>
-                            <a class="dropdown-item" target = "_blank" href="humidity.html">Humidity</a>
-                            <a class="dropdown-item" target = "_blank" href="cloudness.html">Cloudness</a>
-                            <a class="dropdown-item" target = "_blank" href="wind_speed.html">Wind Speed</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Data</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light bar-green padding-navigator">
+        <a class="navbar-brand text-white brand-style px-3"; href="index.html"><strong>Latitude</strong></a>
+        <button class="navbar-toggler border border-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-3 background-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle dropdown-list-grey-background" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item"  href="temperature.html">Max Temperature</a>
+                        <a class="dropdown-item"  href="humidity.html">Humidity</a>
+                        <a class="dropdown-item"  href="cloudness.html">Cloudness</a>
+                        <a class="dropdown-item"  href="wind_speed.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+</nav>
 
     <div class="container">
 
@@ -49,7 +48,7 @@
                     </h3>
                     <hr>
                     <img class="rounded mx-auto d-block home-image" src="Resources/assets/images/Fig2.png " width="100%" alt="Latitude Vs Humidity">
-                    <p class = "px-3 py-3">As expected, the weather becomes significantaly warmer as one approaches the equator (Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+                    <p class = "px-3 py-3">It's quite difficult to see a clear correlation, due that Humidity don't have a "direct" relationship with latitude, but more with current temperature and other factors. If we generate a chart of Humidity vs Max Temp, we will notice an inverse relationship.</p>
                 </div> 
             </div>
 
@@ -61,41 +60,41 @@
                     <hr>
                     <div class = "row pb-3 mx-auto original-visualizations">
                         <div class="col-3 col-md-6">
-                            <a a target = "_blank" href="temperature.html"><img class= "rounded float-right py-3" src="Resources/assets/images/Fig1.png" width="100%" alt="Latitude Vs Temperature">
+                            <a href="temperature.html"><img class= "rounded float-right py-3" src="Resources/assets/images/Fig1.png" width="100%" alt="Latitude Vs Temperature">
                             </a>
                         </div>
                         <div class="col-3 col-md-6">
-                            <a  a target = "_blank" href="humidity.html"><img class="rounded float-left py-3 images-border rounded-0" src="Resources/assets/images/Fig2.png" width="100%" alt="Latitude Vs Humidity">
+                            <a href="humidity.html"><img class="rounded float-left py-3 images-border rounded-0" src="Resources/assets/images/Fig2.png" width="100%" alt="Latitude Vs Humidity">
                             </a>
                         </div>
                         <div class="col-3 col-md-6">
-                            <a a target = "_blank" href="cloudness.html"><img class="rounded float-right py-3 " src="Resources/assets/images/Fig3.png" width="100%" alt="Latitude Vs Cloudness">
+                            <a href="cloudness.html"><img class="rounded float-right py-3 " src="Resources/assets/images/Fig3.png" width="100%" alt="Latitude Vs Cloudness">
                             </a>
                         </div>
                     
                         <div class="col-3 col-md-6">
-                            <a a target = "_blank" href="wind_speed.html"><img class="center py-3" src="Resources/assets/images/Fig4.png" width="100%" alt="Latitude Vs Wind Speed">
+                            <a href="wind_speed.html"><img class="center py-3" src="Resources/assets/images/Fig4.png" width="100%" alt="Latitude Vs Wind Speed">
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class = "row pb-3 visualizations-first-row mx-auto">
                     <div class="col-4">
-                        <a target = "_blank" href="temperature.html"><img class= "rounded float-right py-3" src="Resources/assets/images/Fig1.png" width="100%" alt="Latitude Vs Temperature">
+                        <a href="temperature.html"><img class= "rounded float-right py-3" src="Resources/assets/images/Fig1.png" width="100%" alt="Latitude Vs Temperature">
                         </a>
                     </div>
                     <div class="col-4">
-                        <a target = "_blank" href="humidity.html"><img class="images-border rounded-0 rounded mx-auto d-block py-3" src="Resources/assets/images/Fig2.png" width="100%" alt="Latitude Vs Humidity">
+                        <a href="humidity.html"><img class="images-border rounded-0 rounded mx-auto d-block py-3" src="Resources/assets/images/Fig2.png" width="100%" alt="Latitude Vs Humidity">
                         </a>
                     </div>
                     <div class="col-4">
-                        <a target = "_blank" href="cloudness.html"><img class="rounded float-right py-3" src="Resources/assets/images/Fig3.png" width="100%" alt="Latitude Vs Cloudness">
+                        <a href="cloudness.html"><img class="rounded float-right py-3" src="Resources/assets/images/Fig3.png" width="100%" alt="Latitude Vs Cloudness">
                         </a>
                     </div>
                 </div>
 
                 <div class="col-4 row visualization-second-row mx-auto">
-                    <a target = "_blank" href="wind_speed.html"><img class="rounded float-right py-3" src="Resources/assets/images/Fig4.png" width="100%" alt="Latitude Vs Wind Speed">
+                    <a href="wind_speed.html"><img class="rounded float-right py-3" src="Resources/assets/images/Fig4.png" width="100%" alt="Latitude Vs Wind Speed">
                     </a>
                 </div>
             </div>
