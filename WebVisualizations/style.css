@@ -30,12 +30,12 @@ h5{
 }
 
 .images-border{
-    border:1px solid rgb(89, 189, 172)
+    border:1px solid rgb(89, 189, 172);
 }
 
 
 p{
-    font-family: Arial,;
+    font-family: Arial;
     font-size: large;
  }
 
@@ -55,6 +55,10 @@ p{
     display: none;
 }
 
+.body-table-background{
+    background-color:rgb(228, 225, 225);
+}
+
 @media(max-width:767px){
     .bar-green{
         background-color: rgb(89, 189, 172)!important;    
@@ -62,6 +66,10 @@ p{
 
     .sm-body-background{
         background-color : white;
+    }
+
+    .body-table-background{
+        background-color: white;
     }
 
     .separator{
@@ -78,5 +86,13 @@ p{
 
     .visualization-second-row{
         display: grid;
+    }
+
+    .table-border {
+        border: 1px solid #ddd;
+      }
+    
+    tr{
+        border-bottom: 1px solid #ddd;
     }
 }
