@@ -59,6 +59,30 @@ p{
     background-color:rgb(228, 225, 225);
 }
 
+.social-media-style{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+
+ul li a{
+    color: black;
+   margin-bottom: 0%;
+}
+
+.right-align{
+    justify-content: right;
+}
+
 /* Adjustment for small screen */
 
 @media(max-width:767px){
